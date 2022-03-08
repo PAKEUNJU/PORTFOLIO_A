@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>PAKEUNJU PORTFOLIO</title>
+<!-- 순서 jquaery.css / css / jquery.min.js / fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="css02/main.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <STYLE>    
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    </STYLE>
+<script>
+        // 스크립트 주석방법 자바스크립트 , 제이쿼리
+        //제이쿼리를 시작하겠다 $(function(){};)
+        $(function(){
+            //스크립트 코드 작성
+            //모션 그래픽 탭메뉴 작성
+            //메뉴를 클릭하면 클래스명 on이 붙고 떨어지도록 작성
+            // addClass  / removeClass 단어가 두개 이상이면 소문자 시작 두번째 대문자 시작
+            $('.youtube_menu li').click(function(){
+                $('.youtube_menu li').removeClass('on');
+                $(this).addClass('on') 
+                
+                $('.menu_cont').removeClass('on');
+                $('.menu_cont').eq($(this).index()).addClass('on');
+            });
+
+            //a태그 기능 방지
+            $('.youtube_menu li a').click(function(e){
+                e.preventDefault();
+            });
+
+        }); //jquery end
+    </script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="#">
+                    PAK EUN JU
+                </a>
+            </h1>
+            <p>
+                <a href="#" download>resume</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- 메인 비주얼_main_visual -->
+    <section class="main_visual">
+        <figure class="mian_visul_img">
+            <IMG src="images/KakaoTalk_20220123_004154039.png">
+        </figure>
+        <div>
+            <h2>MULTI DESIGNER</h2>
+            <p>#VS CODE</p>
+            <p>#PREMIERE PRO</p>
+            <p>#ATFTER EFFECTS</p>
+            <p>#4D</p>
+            <p>#ILLUSTRATOR</p>
+            <p>#PHOTOSHOP</p>
+        </div>     
+    </section><!-- .main_visual -->
+
+    <!-- 베스트 포트폴리오 -->
+    <div class="center">
+        <p>PORTFOLIO</p>
+    </div>
+    <section class="best">
+        <h3>NO.1</h3>
+        <div class="best_box">
+            <div class="info">
+                <p class="cate">#K_Drama</p>
+                <h4>소년심판</h4>
+                <p class="produce">연출, 촬영, 편집, 디자인, 특수효과</p>
+                
+                <p class="text">소년범을 혐오하는 판사가 마주한<br>괴물 같은 아이들, 충격적인 현실</br>
+                    <br>“재판을 시작하겠습니다.”</br> <br>가장 차가운 분노</br>《소년심판》 2월 25일, 오직 넷플릭스</p>
+                <dl>
+                    <dt>프로그램</dt>
+                    <dd>premiere pro, after effects</dd>
+                </dl>
+                <dl>
+                    <dt>배경음악</dt>
+                    <dd>Safira.K (사피라 K) - Boy</dd>
+                </dl>
+                <dl>
+                    <dt>러닝타임</dt>
+                    <dd>16s<br>1m 10s</br></dd>
+                </dl>
+                <ul>
+                    <li><a href="#">웹페이지</a></li>
+                    <li><a href="#">기획서</a></li>
+                </ul>
+            </div><!-- .info -->
+
+            <div class="list_img">
+                <figure>
+                    <img src="images/drama_poster.png" alt=""/>
+                </figure>
+            </div>
+
+            <div class="youtube_list">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JYUB1ECx5fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="list">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/01mEKO6NI1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div><!-- .youtube_list end -->  
+        </div><!-- .best box end -->
+        </section>
+
+            <!-- No.2 -->
+        <section class="best_2">                
+                <h3>NO.2</h3>
+                <div class="best_box">
+                <div class="youtube_list">
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cC9aarA1Mhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="list">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/u6-92VXKTJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div><!-- .youtube_list end -->  
+
+                <div class="list_img">
+                    <figure>
+                        <img src="images/bts.jpg" alt=""/>
+                    </figure>
+                </div><!-- .list_img -->
+
+                <div class="info">
+                    <p class="cate">#K_Music</p>
+                    <h4>뮤직비디오</h4>
+                    <p class="produce">디자인, 퍼블리싱</p>
+                    <p class="text">
+                        한국의 다양한 음악들을 소개
+                        <br>
+                        ex) ost, k-pop...
+                        <br/>
+                    </p>
+                    <dl>
+                        <dt>프로그램</dt>
+                        <dd>phtoshop, vs code ,html5, css</dd>
+                    </dl>
+                    <dl>
+                        <dt>배경음악</dt>
+                        <dd>Safira.K (사피라 K) - Boy</dd>
+                    </dl>
+                    <dl>
+                        <dt>러닝타임</dt>
+                        <dd>1m 27s<br>4m 29s</br></dd>
+                    </dl>
+                    <ul>
+                        <li><a href="#">웹페이지</a></li>
+                        <li><a href="#">기획서</a></li>
+                    </ul>
+                </div><!-- .info end -->
+            </div><!-- .best_box -->
+        </section><!-- .best end -->       
+
+        <section class="youtube_wrab">
+                <h3>MOTION GRAPHIC</h3>
+            <ul class="youtube_menu">
+                <li class="on"><a href="#">홍보영상</a></li>
+                <li><a href="#">인포그래픽</a></li>
+                <li><a href="#">뮤비티저</a></li>
+                <li><a href="#">영화티저</a></li>
+                <li><a href="#">게임</a></li>
+            </ul><!-- youtube_menu end -->
+        
+        <div class="youtube_cont">
+            <div class="menu_cont on">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 1 -->
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 2 -->                
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 3 -->
+                <div class="box"><!-- 4 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 4 -->
+            </div><!-- .menu_cont on 1.홍보영상 end -->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 1 -->
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 2 -->                
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 3 -->
+                <div class="box"><!-- 4 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 4 -->
+            </div><!-- .menu_cont 2.인포그래픽 end -->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 1 -->
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 2 -->                
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 3 -->
+                <div class="box"><!-- 4 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 4 -->
+            </div><!-- .menu_cont 3.뮤비티저 end -->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 1 -->
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 2 -->                
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 3 -->
+                <div class="box"><!-- 4 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V2voCiBjqdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 4 -->
+            </div><!-- .menu_cont 4.영화티저 end -->
+            <div class="menu_cont">
+                <div class="box"><!-- 1 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 1 -->
+                <div class="box"><!-- 2 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 2 -->                
+                <div class="box"><!-- 3 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 3 -->
+                <div class="box"><!-- 4 -->
+                    <div class="youtube_list">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/B_X7n0AaLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div><!-- youtube_list -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>한국관광공사 서울 홍보티저</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>illustrator, premiere pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>이날치, 앰비규어스댄스컴퍼니 - 범 내려온다</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>1m 37s</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></dd>
+                        </dl>
+                    </div><!-- .class info -->
+                </div><!-- .box 4 -->
+            </div><!-- .menu_cont 5.게임 end -->
+
+
+        </div><!-- .youtube_cont end -->
+        </section><!-- .youtube_wrab end -->
+
+
+
+        <section class="g_design">
+            <h3>DESIGN</h3>
+            <em>IMAGE click</em>
+            <div class="img_list">
+                <div>
+                    <a href="images/LAYW.jpg" data-fancybox="images">
+                        <figure>
+                            <img src="images/LAYW.jpg" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+    
+                <div>
+                    <a href="images/LAY.jpg" data-fancybox="images">
+                        <figure>
+                            <img src="images/LAY.jpg" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+    
+                <div>
+                    <a href="images/B_03.jpg" data-fancybox="images">
+                        <figure>
+                            <img src="images/B_03.jpg" alt="" />
+                        </figure>
+                        <ul>
+                            <li>캐릭터디자인</li>
+                            <li>목적, 제목, 프로그램</li>
+                        </ul>
+                    </a>
+                </div>
+    
+            
+            </div><!-- .img_list end -->
+        </section><!-- .g_design end -->
+    
+       
+
+
+        <footer>
+            <h3>PAK EUN JU</h3>
+            <ul>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="tel:010-2294-6765">010.2294.6765</a></li>
+                <li>ju151359@kakao.com</li>
+            </ul>
+            <p>COPYRIGHT 2022. PAKEUNJU ALL RIGHTS RESERVED.<br />본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
+        </footer>
+        </section>
+
+
+</body>
+</html>
+</html>
